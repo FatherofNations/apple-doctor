@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Apple Doctor</title>
+  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+  <script type="text/javascript">
+  ymaps.ready(init);
+
+  function init(){
+
+      var myMap;
+
+      myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 13
+      });
+
+  }
+</script>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+
+	<header>
+    <div class="container">
+      <div class="main-content">
+        <img src="img/header-hand.png" alt="">
+
+        <div class="mobile-menu clearfix">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo">
+          </div>
+
+          <a class="popup-with-move-anim" href="#small-dialog">
+            <div class="menu-button">
+              <div class="burger"></div>
+            </div>
+          </a>
+
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <div class="dialog-close"></div>
+            <ul class="mobile-menu-ref">
+              <li><a href="#">услуги и цены</a></li>
+              <li><a href="#">о нас</a></li>
+              <li><a href="#">отзывы</a></li>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">акция</a></li>
+              <li><a style="padding-right: 0" href="#">контакты</a></li>
+            </ul>
+          </div>
+        </div>
+
+    <div class="menu clearfix">
+        <div class="row">
+          <div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+            <div class="logo">
+              <img src="img/logo.png" alt="logo">
+            </div>
+          </div>
+
+          <div class="hidden-xs col-sm-9 col-md-6 col-lg-6">
+            <ul class="menu-ref">
+              <li><a href="#">услуги и цены</a></li>
+              <li><a href="#">о нас</a></li>
+              <li><a href="#">отзывы</a></li>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">акция</a></li>
+              <li><a style="padding-right: 0" href="#">контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+            <div class="social">
+              <img src="img/vk.png" alt="">
+              <img src="img/inst.png" alt="">
+              <img src="img/fb.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-7 col-sm-4 col-md-2 col-lg-2">
+            <div class="menu-phone">
+              <h3>+7 (812) 234-22-32</h3>
+              <h5>whatsapp, viber, telegram</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="header-title-wrap">
+
+        <div class="header-title">
+         <h1>профессиональная<br>клиника для apple</h1>
+         <h3>лечим ваше утройство по лучшим мировым стандартам</h3>
+       </div>
+
+     </div>
+
+
+     <div style="width: 100%; height: 100%;">
+      <div class="header-overview">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="over-item clearfix">
+              <img src="img/time.png" alt="">
+              <p>Приедем в любую точку<br>Питера <b>в течение часа</b></p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="over-item clearfix">
+              <img src="img/cogs.png" alt="">
+              <p>Бесплатная диагностика<br><b>даже при выезде</b></p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+          <div class="over-item clearfix">
+            <img src="img/medal.png" alt="">
+            <p><b>Пожизненная гарантия</b><br>на работы и запчасти</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </div>
+</header>
+
+<section class="price">
+  <div class="container">
+    <h1>Выберите модель iPhone или iPad и неисправность</h1>
+    <hr>
+    <div class="button-swipe clearfix">
+      <span id="iphone" class="active" style="float: left">iphone</span>
+      <span id="ipad" style="float: right">ipad</span>
+      <div class="swiper"></div>
+    </div>
+
+    <div class="price-list">
+      <hr>
+
+      <div class="models iphone-models">
+        <ul>
+          <li><a>5</a></li>
+          <li><a>5c</a></li>
+          <li><a>5s</a></li>
+          <li><a>se</a></li>
+          <li><a>6</a></li>
+          <li><a>6plus</a></li>
+          <li><a>6s</a></li>
+          <li><a>6s plus</a></li>
+          <li><a>7</a></li>
+          <li><a>7plus</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="models ipad-models">
+        <ul>
+          <li><a>5</a></li>
+          <li><a>5c</a></li>
+          <li><a>5s</a></li>
+          <li><a>se</a></li>
+          <li><a>6</a></li>
+          <li><a>6plus</a></li>
+          <li><a>6s</a></li>
+          <li><a>6s plus</a></li>
+          <li><a>7</a></li>
+          <li><a>7plus</a></li>
+        </ul>
+      </div> -->
+
+      <div class="model-price">
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена стекла / дисплея (копия оригинального качества)</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена разъема зарядки</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена слухового динамика</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена кнопки Home</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена корпуса</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена полифонического динамика</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Наклеить защитное стекло (доп. услуга)</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена кнопки включения</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена аккумулятора</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена разъема наушников</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена микрофона</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена кнопок громкости</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена основной камеры</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Диагностика</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Перепрошивка (доп. услуга)</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+          <hr class="hr-xs">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена кнопки переключения вибро </h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Замена передней камеры</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+            <hr class="hr-xs">
+          </div>
+          <div class="col-md-6">
+            <div class="price-item clearfix">
+              <h5>Пайка (сложный ремонт)</h5>
+              <h4>3200Р</h4>
+              <a class="heal" href="#">
+                <div class="plus"></div>
+                лечить
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="why">
+  <h1>почему вам нужно к нам</h1>
+  <hr>
+
+  <div class="w-cards">
+    <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h5>стационарный сервис:</h5>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/cog-time.png" alt="">
+            <p>Работаем с 9 до 21.00<br><b>Без выходных</b></p>
+          </div>
+        </div>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/sand.png" alt="">
+            <p>Любой ремонт всего<br><b>за 20 минут</b></p>
+          </div>
+        </div>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/m-cogs.png" alt="">
+            <p>Профессиональное<br>оборудование</b></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <h5>выездной ремонт:</h5>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/24.png" alt="">
+            <p>Дежурный «врач»<br><b>работает круглосуточно</b></p>
+          </div>
+        </div>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/card.png" alt="">
+            <p>Оплата наличными<br>или карточкой</b></p>
+          </div>
+        </div>
+
+        <div class="w-item">
+          <div class="w-content clearfix">
+            <img src="img/blue-timer.png" alt="">
+            <p>Приедем в любую точку<br>Питера <b>в течении часа</b></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-12  col-xs-12">
+        <div class="w-item clearfix">
+          <!-- <div class="row"> -->
+            <div class="col-md-3 col-xs-12">
+              <div class="w-fw clearfix">
+                <div class="w-content dd clearfix">
+                  <img src="img/guard.png" alt="">
+                  <p>Оригинальные<br>комплектующие<br>с гарантией</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="w-fw clearfix">
+                <div class="w-content dd clearfix">
+                  <img src="img/list.png" alt="">
+                  <p>Бесплатно клеим<br>защитные стекла всегда<br>и всем</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="w-fw clearfix">
+                <div class="w-content dd clearfix">
+                  <img src="img/clock-select.png" alt="">
+                  <p>Экспресс услуга замена<br>экрана за 6 минут</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="w-fw clearfix">
+                <div class="w-content dd clearfix">
+                  <img src="img/circle.png" alt="">
+                  <p>Страховка на ремонт<br>(при повторном разбитии<br>заменим экран бесплатно)</p>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consult">
+  <div class="container">
+    <div class="consult-content clearfix">
+      <div class="cl-title clearfix">
+        <img src="img/power.png" alt="power">
+        <h1>быстрая<br>консультация</h1>
+      </div>
+      <form class="cl-form">
+        <input type="text" name="phone" placeholder="Введите свой номер телефона">
+        <input class="sbmt-button" type="submit" value="перезвоните!">
+        <!-- <a href="#"></a> -->
+        <br>
+        <!-- <input type="checkbox" checked> -->
+        <section style="float: left">
+    <!-- .squaredFour -->
+    <div class="squaredFour">
+      <input type="checkbox" value="None" id="squaredFour" name="check" checked required />
+      <label for="squaredFour"></label>
+    </div>
+    <!-- end .squaredFour -->
+  </section>
+        <label>Я принимаю <a href="#">условия обработки и хранения персональных данных</a></label>
+        <input id="sd" type="submit" value="перезвоните!">
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="peoples">
+  <div class="container">
+    <div class="p-title">
+      <h1>наша команда специалистов</h1>
+      <hr>
+      <p>Чтобы попасть на работу в APPLEDOCTOR, мастер должен пройти<br>тестирование своих навыков и специальное обучение.</p>
+    </div>
+    <div class="carousel">
+      <div class="owl-carousel owl-carousel-p owl-theme">
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+        <div class="item p-owl-item">
+          <div class="p-circle"></div>
+          <h3>Александр Федоров</h3>
+          <p>Эпплдоктор со стажем 5 лет<br>Выплолнил более 4500 ремонтов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feedback">
+  <div class="container">
+    <div class="fb-content">
+      <div class="fb-title">
+        <h1>отзывы наших клиентов</h1>
+      </div>
+      <hr>
+      <div class="button-swipe-fb clearfix">
+        <span id="iphone-fb" class="active" style="float: left">соцсети</span>
+        <span id="ipad-fb" style="float: right">видео</span>
+        <div class="swiper-fb"></div>
+      </div>
+
+      <div class="owl-carousel owp owl-theme h-owl-sm">
+        <div class="item slide">
+          <div class="col-md-6">
+            <div class="comment">
+              <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+              <div class="avatar"><h5>Юлия Тимофеева</h5>
+                <a target="_blank" href="https://vk.com/">
+                  <img src="img/c-vk.png" alt="vk">
+                </a></div>
+            </div>
+
+            <div class="comment">
+              <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+              <div class="avatar"><h5>Юлия Тимофеева</h5>
+                <a target="_blank" href="https://https://vk.com//">
+                  <img src="img/c-vk.png" alt="vk">
+                </a></div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="comment">
+              <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+              <div class="avatar"><h5>Юлия Тимофеева</h5>
+                <a target="_blank" href="https://https://vk.com//">
+                  <img src="img/c-vk.png" alt="vk">
+                </a></div>
+            </div>
+
+            <div class="comment">
+              <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+              <div class="avatar"><h5>Юлия Тимофеева</h5>
+                <a target="_blank" href="https://vk.com/">
+                  <img src="img/c-vk.png" alt="vk">
+                </a></div>
+            </div>
+
+          </div>
+          </div>
+
+          <div class="item slide">
+            <div class="col-md-6">
+              <div class="comment">
+                <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+                <div class="avatar"><h5>Юлия Тимофеева</h5>
+                  <a target="_blank" href="https://vk.com/">
+                    <img src="img/c-vk.png" alt="vk">
+                  </a></div>
+              </div>
+
+              <div class="comment">
+                <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+                <div class="avatar"><h5>Юлия Тимофеева</h5>
+                  <a target="_blank" href="https://vk.com/">
+                    <img src="img/c-vk.png" alt="vk">
+                  </a></div>
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="comment">
+                <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+                <div class="avatar"><h5>Юлия Тимофеева</h5>
+                  <a target="_blank" href="https://vk.com/">
+                    <img src="img/c-vk.png" alt="vk">
+                  </a></div>
+              </div>
+
+              <div class="comment">
+                <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+                <div class="avatar"><h5>Юлия Тимофеева</h5>
+                  <a target="_blank" href="https://vk.com/">
+                    <img src="img/c-vk.png" alt="vk">
+                  </a></div>
+              </div>
+
+            </div>
+            </div>
+
+
+      </div>
+
+      <div class="owl-carousel owl-mobile-carousel owl-theme">
+        <div class="itemd slide owl-mobile">
+          <div class="comment">
+            <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+            <div class="avatar"><h5>Юлия Тимофеева</h5>
+              <a target="_blank" href="https://vk.com/">
+                <img src="img/c-vk.png" alt="vk">
+              </a></div>
+          </div>
+        </div>
+        <div class="item slide owl-mobile">
+          <div class="comment">
+            <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+            <div class="avatar"><h5>Юлия Тимофеева</h5>
+              <a target="_blank" href="https://vk.com/">
+                <img src="img/c-vk.png" alt="vk">
+              </a></div>
+          </div>
+        </div>
+        <div class="item slide owl-mobile">
+          <div class="comment">
+            <p>Коммуникация откровенно цинична. Стратегия предоставления скидок и бонусов раскручивает медийный канал, опираясь на опыт западных коллег. Презентационный материал одновременно экономит имидж предприятия.  Имидж, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Психологическая среда, суммируя приведенные примеры, вырождена. Правда, специалисты отмечают, что эластичность спроса многопланово отталкивает связанный медиаплан.</p>
+            <div class="avatar"><h5>Юлия Тимофеева</h5>
+              <a target="_blank" href="https://vk.com/">
+                <img src="img/c-vk.png" alt="vk">
+              </a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="qa">
+  <div class="container">
+    <div class="qa-title">
+      <h1>ответы на частые вопросы</h1>
+    </div>
+    <hr>
+    <div class="qa-content">
+      <div class="col-md-6">
+        <div class="qa-item">
+          <h2>SWOT-анализ концентрирует эмпирический диктат потребителя?</h2>
+          <p>Построение бренда существенно стабилизирует экспериментальный фирменный стиль. Создание приверженного покупателя, согласно Ф.Котлеру, уравновешивает комплексный традиционный канал, невзирая на действия конкурентов. Социальный статус последовательно восстанавливает план размещения.<br><br>
+  Имиджевая реклама экономит комплексный повторный контакт, признавая определенные рыночные тенденции. Социальный статус, вопреки мнению П.Друкера, по-прежнему устойчив к изменениям спроса. Анализ зарубежного опыта, суммируя приведенные примеры, изящно восстанавливает конструктивный SWOT-анализ.</p>
+        </div>
+
+        <div class="qa-item">
+          <h2>Имиджевая реклама экономит?</h2>
+          <p>Построение бренда существенно стабилизирует экспериментальный фирменный стиль. Создание приверженного покупателя, согласно Ф.Котлеру, уравновешивает комплексный традиционный канал, невзирая на действия конкурентов. Социальный статус последовательно восстанавливает план размещения.</p>
+        </div>
+
+        <div class="qa-item">
+          <h2>Социальный статус, вопреки мнению ?</h2>
+          <p>Построение бренда существенно стабилизирует экспериментальный фирменный стиль. Создание приверженного покупателя, согласно Ф.Котлеру, уравновешивает комплексный традиционный канал, невзирая на действия конкурентов. Социальный статус последовательно восстанавливает план размещения.</p>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="qa-item">
+          <h2>Социальный статус восстанавливает?</h2>
+          <p>Conversion rate обуславливает пак-шот. SWOT-анализ концентрирует эмпирический диктат потребителя, осознав маркетинг как часть производства. Стимулирование коммьюнити усиливает стратегический маркетинг. PR программирует ролевой медиамикс.
+<br> <br>
+Построение бренда существенно стабилизирует экспериментальный фирменный стиль. Создание приверженного покупателя, согласно Ф.Котлеру, уравновешивает комплексный традиционный канал, невзирая на действия конкурентов. Социальный статус последовательно восстанавливает план размещения.
+<br> <br>
+Имиджевая реклама экономит комплексный повторный контакт, признавая определенные рыночные тенденции. Социальный статус, вопреки мнению П.Друкера, по-прежнему устойчив к изменениям спроса. Анализ зарубежного опыта, суммируя приведенные примеры, изящно восстанавливает конструктивный SWOT-анализ.</p>
+        </div>
+
+        <div class="qa-item">
+          <h2>Креативный анализ зарубежного опыта?</h2>
+          <p>Построение бренда существенно стабилизирует экспериментальный фирменный стиль. Создание приверженного покупателя, согласно Ф.Котлеру, уравновешивает комплексный традиционный канал, невзирая на действия конкурентов. Социальный статус последовательно восстанавливает план размещения.
+<br><br>
+Имиджевая реклама экономит комплексный повторный контакт, признавая определенные рыночные тенденции. Социальный статус, вопреки мнению П.Друкера, по-прежнему устойчив к изменениям спроса. Анализ зарубежного опыта, суммируя приведенные примеры, изящно восстанавливает конструктивный SWOT-анализ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="timer">
+  <div class="container">
+    <img class="tablets-bg" src="img/tablets-bg.png" alt="tablets">
+    <div class="timer-content">
+      <h2>успей! скидка 20%<br>на ремонт 2-х устройств</h2>
+      <p>До конца акции осталось:</p>
+
+      <div class="timer-data">
+        <div class="p-a">
+          <div class="particle-l"></div>
+          <div class="bg-timer-items">
+            <div class="t-i"><span class="afss_day_bv"></span></div>
+            <span id="day">дней</span>
+            <div class="t-i"><span class="afss_hours_bv"></span></div>
+            <span id="hour">часов</span>
+            <div class="t-i"><span class="afss_mins_bv"></span></div>
+            <span id="min">минут</span>
+            <div class="t-i"><span class="afss_secs_bv"></span></div>
+            <span id="sec">секунд</span>
+          </div>
+          <div class="line"></div>
+          <div class="particle-r"></div>
+        </div>
+      </div>
+
+      <form class="timer-form">
+        <input type="text" name="phone" placeholder="Введите свой номер телефона">
+        <!-- <a href="#"></a> -->
+        <br>
+        <!-- <input type="checkbox" checked> -->
+        <section class="stl" style="float: left">
+    <!-- .squaredFour -->
+    <div class="squaredFour">
+      <input type="checkbox" value="None" id="squaredFour" name="check" checked required />
+      <label for="squaredFour"></label>
+    </div>
+    <!-- end .squaredFour -->
+  </section>
+        <label>Я принимаю <a href="#">условия обработки и хранения персональных данных</a></label>
+        <input class="sbmt-button rbl" type="submit" value="хочу скидку!">
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="map-section">
+  <div id="map">
+  </div>
+  <div class="container">
+    <div class="info">
+      <img src="img/map.png" alt="">
+      <h2>Будем рады видеть в нашем<br>офисе ежедневно с 9.00 до 21.00</h2>
+      <p>Пока вы ждете, мы угостим Вас вкусным<br>кофе или чаем.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="footer-menu">
+  <div class="container">
+    <div class="ft-menu-content">
+      <div class="row">
+        <div class="col-md-2 col-xs-12">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>быстрый и качественный<br>ремонт техники apple</p>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <a href="#">Условия хранения и обработки персональных даных</a>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <p class="sdv" style="text-align: right">2004-2017 ООО «Вертикаль-Строй»,<br>ИНН 7728623691, ОГРН 5077746887268.
+      117485,<br> г. Санкт-Петербург, ул. Бутлерова, д.4, корпус 3
+      </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,866 @@
+@import mixins
+@import fonts
+@import burger
+
+$white: #FFFFFF
+$yellow: #FF9204
+$gray: #333333
+$blue: #3CD7C7
+
+a
+	&:hover, &:active, &:focus
+		text-decoration: none
+
+header
+	background-color: #36BCB0
+
+.logo
+	padding-top: 3px
+	text-transform: uppercase
+	img
+		max-width: 170px
+		margin-top: -13px
+	h3
+		display: inline
+		color: #D4F6FF !important
+		font-size: 1.9em
+		margin-top: 23px
+		font-family: Oswald
+	b
+		color: $white
+
+.menu
+	padding-top: 25px
+
+.mobile-menu
+	display: none
+	padding-top: 20px
+
+.menu-button
+	background-color: $white
+	border-radius: 4px
+	width: 52px
+	float: right
+	height: 42px
+	display: none
+	justify-content: center
+	align-items: center
+	.burger
+		+burger(25px, 3px, 5px, #FF9204, 1.5px)
+
+.menu-ref
+	padding: 12px 0 0 0
+	li
+		display: inline
+		a
+			text-transform: uppercase
+			color: $white
+			font-size: 1.14em
+			padding: 0 10px
+			font-family: Roboto
+			font-weight: 300
+
+.social
+	display: flex
+	justify-content: space-around
+	padding-top: 5px
+
+.menu-phone
+	color: $white
+	font-family: Oswald
+	h3
+		margin: 0
+		padding-top: 9px
+		font-size: 21px
+	h5
+		margin: 0
+		padding: 5px 5px
+		font-weight: 300
+
+.main-content
+	position: relative
+	>img
+		position: absolute
+		bottom: 0
+		width: 650px
+		right: -8%
+
+.header-title-wrap
+	.header-title
+		margin-top: 150px
+		text-transform: uppercase
+		font-family: 	Oswald
+		color: $white
+		h1
+			font-size: 5.2em
+		h3
+			color: #AEF7F5
+			font-size: 1.85em
+
+.header-overview
+	position: relative
+	z-index: 10
+	background-color: rgba(255, 255, 255, 0.8)
+	border-radius: 4px
+	margin-top: 88px
+	margin-bottom: 76px
+	p
+		margin: 0
+		font-family: Roboto
+		font-size: 1.3em
+		float: left
+		padding-left: 25px
+		padding-top: 8px
+	img
+		float: left
+		padding-left: 36px
+	.row
+		padding: 20px 0
+
+#small-dialog
+	background: white
+	padding: 20px 30px
+	text-align: left
+	max-width: 350px
+	margin: 20px auto
+	position: relative
+	border-radius: 4px
+
+.dialog-close
+	position: absolute
+	right: 12px
+	top: 12px
+	width: 32px
+	height: 32px
+	&:after, &::before
+		position: absolute
+		left: 15px
+		content: ' '
+		height: 33px
+		width: 5px
+		background-color: #FF9204
+		border-radius: 12px
+	&::after
+		transform: rotate(-45deg)
+	&::before
+		transform: rotate(45deg)
+
+.mobile-menu-ref
+	padding: 0
+	margin-top: 30px
+	font-size: 1.25em
+	list-style: none
+	text-align: center
+	li
+		padding: 8px 0
+		a
+			color: #000
+			font-family: Roboto
+			text-transform: uppercase
+
+.mfp-container
+	height: 0
+.mfp-close
+	display: none !important
+
+
+.price
+	h1
+		text-align: center
+		font-family: Oswald
+		text-transform: uppercase
+		margin-top: 30px
+		color: $gray
+		font-weight: 300
+		font-size: 3em
+
+hr
+	width: 160px
+	height: 2px
+	background-color: $yellow
+	border: none !important
+
+.price
+	background-color: #f3f3f3
+
+.button-swipe
+	display: block
+	margin: 0 auto
+	max-width: 260px
+	background-color: $white
+	border-radius: 23.5px
+	height: 47px
+	position: relative
+	text-align: right
+	text-transform: uppercase
+	font-family: Oswald
+	font-style: normal
+	font-weight: 300
+	font-size: 1.6em
+	line-height: 2.15em
+	margin-bottom: 25px
+	span
+		text-align: center
+		width: 130px
+		border-radius: 23.5px
+		cursor: pointer
+		color: #888888
+	.active
+		color: $white !important
+.active-swipe
+	margin-left: 130px
+.swiper
+	width: 130px
+	background-color: #A352CD
+	border-radius: 23.5px
+	height: inherit
+	z-index: 0
+	display: block
+	top: 0
+	left: 0
+	color: $white
+	transition: all 0.2s ease
+
+.price-list
+	hr
+		background-color: #c8c8c8
+		height: 1px
+		width: 100%
+		margin: 10px 0
+	.models
+		ul
+			list-style: none
+			width: 100%
+			margin: 0 auto
+			padding: 0
+			text-align: center
+			li
+				display: inline-block
+				padding: 0 7px
+				a
+					text-transform: uppercase
+					font-family: Oswald
+					font-weight: 300
+					padding: 0 15px
+					border-radius: 100px
+					font-size: 2em
+					color: $gray
+					cursor: pointer
+					&:hover
+						color: $yellow
+		.active
+			background-color: $blue
+			color: $white
+
+.model-price
+		margin-bottom: 30px
+		margin-top: 10px
+		hr
+			margin: 0
+.hr-xs
+	display: none
+.price-item
+	font-family: Roboto
+	padding: 10px 10px
+	position: relative
+	.heal
+		position: absolute
+		display: none
+		right: 70px
+		max-width: 155px
+		border-radius: 20px
+		color: $white
+		font-family: Oswald
+		font-weight: 300
+		font-size: 1.6em
+		padding: 2px 40px 8px 60px
+		text-align: center
+		background-color: $blue
+		.plus
+			@extend .dialog-close
+			left: 25px
+			top: 12px
+			&::after
+				background-color: $white
+				transform: rotate(90deg)
+				height: 15px
+			&::before
+				background-color: $white
+				transform: rotate(180deg)
+				height: 15px
+	h5
+		float: left
+		font-size: 1.2em
+		font-weight: 300
+	h4
+		float: right
+		font-weight: 500
+	&:hover
+		background-color: #160320
+		opacity: .80
+		.heal
+			display: block
+
+.why
+	background-image: url(../img/w-bg.png)
+	.w-item
+		background-color: $white
+		border-radius: 4px
+		margin-bottom: 40px
+	.w-content
+		margin: auto
+		max-width: 300px
+		min-height: 90px
+		padding: 15px 0
+	h1
+		text-align: center
+		font-family: Oswald
+		text-transform: uppercase
+		padding-top: 30px
+		margin-top: 0
+		color: $white
+		font-weight: 300
+		font-size: 3em
+	h5
+		color: $white
+		opacity: .7
+		font-family: Oswald
+		font-weight: 300
+		text-align: center
+		padding: 15px
+		font-size: 1.4em
+		text-transform: uppercase
+	p
+		margin: 0
+		font-family: Roboto
+		font-size: 1.2em
+		float: left
+		padding-left: 25px
+		padding-top: 8px
+	img
+		float: left
+
+.w-fw
+	text-align: center
+	padding: 10px 0
+	img
+		margin: auto
+		display: block
+		float: none
+	p
+		padding: 10px 0 0 0
+		float: none
+
+.consult
+	background-color: $yellow
+	.consult-content
+		margin: auto
+		padding: 30px 0
+		max-width: 1000px
+		.cl-title
+			max-width: 390px
+			float: left
+		img
+			float: left
+			padding-top: 6px
+		h1
+			text-transform: uppercase
+			font-family: Oswald
+			color: $white
+			float: left
+			font-size: 3em
+			font-weight: 300
+			margin: 5.5px 20px
+		form
+			padding: 10px 0
+			float: right
+			input[type="text"]
+				width: 340px
+				border-radius: 4px
+				border: none
+				padding: 10px 15px
+				margin-bottom: 20px
+			input[type="submit"]
+				background-color: #A352CD
+				font-family: Oswald
+				font-weight: 300
+				padding: 9px 35px
+				margin-left: 20px
+				border-radius: 22px
+				color: $white
+				font-size: 1.2em
+				text-transform: uppercase
+				border: none
+			a
+				text-decoration: underline
+				color: inherit
+			label
+				color: $white
+				font-family: Roboto
+				float: left
+				font-weight: 300
+				padding-left: 10px
+#sd
+	display: none
+
+.squaredFour
+  width: 20px
+  position: relative
+  margin: 0
+  label
+    width: 20px
+    height: 20px
+    cursor: pointer
+    position: absolute
+    top: 0
+    left: 0
+    background: #fcfff4
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    border-radius: 4px
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5)
+    &:after
+      content: ''
+      width: 13px
+      height: 8px
+      position: absolute
+      top: 4px
+      left: 4px
+      border: 3px solid #FF9204
+      border-top: none
+      border-right: none
+      background: transparent
+      opacity: 0
+      transform: rotate(-45deg)
+
+    &:hover::after
+      opacity: 0.5
+
+
+  input[type=checkbox]
+    visibility: hidden
+    &:checked + label:after
+      opacity: 1
+
+.peoples
+	background-color: $white
+	.p-title
+		p
+			text-align: center
+			font-family: Roboto
+			font-size: 1.3em
+	h1
+		text-align: center
+		font-family: Oswald
+		text-transform: uppercase
+		padding-top: 40px
+		margin-top: 0
+		color: $gray
+		font-weight: 300
+		font-size: 3em
+
+	.carousel
+		margin-top: 40px
+		margin-bottom: 50px
+		i
+			font-size: 2em
+			margin-bottom: 3px
+	.p-owl-item
+		font-family: Roboto
+		font-weight: 300
+		text-align: center
+		color: #888888
+		h3
+			font-weight: 300
+			color: #000
+	.p-circle
+		width: 220px
+		height: 220px
+		background-color: $white
+		box-shadow: 0px 6px 19.11px 1.89px rgba(0, 1, 1, 0.13)
+		border-radius: 250px
+		margin: auto
+		background-image: url(../img/man.png)
+		background-repeat: no-repeat
+		background-position: bottom
+
+.owl-prev, .owl-next
+	width: 35px
+	height: 35px
+	position: absolute
+	top: 30%
+	background-color: #F3F3F3 !important
+	border-radius: 250px !important
+	text-align: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex !important
+	justify-content: center
+	align-items: center
+	i
+		color: black
+.owl-prev
+	left: -40px
+.owl-next
+	right: -55px
+
+.owl-carousel-p
+	.owl-dots
+		display: none
+
+.button-swipe-fb
+	@extend .button-swipe
+	margin-bottom: 30px
+	max-width: 300px
+	span
+		width: 150px
+.swiper-fb
+	@extend .swiper
+	width: 150px
+.active-swipe-fb
+	@extend .active-swipe
+	margin-left: 150px
+
+.feedback
+	background-color: $blue
+	hr
+		background-color: #88ddce
+		margin-bottom: 35px
+	.fb-title
+		h1
+			text-align: center
+			font-family: Oswald
+			text-transform: uppercase
+			padding-top: 40px
+			margin-top: 0
+			margin-bottom: 20px
+			color: $white
+			font-weight: 300
+			font-size: 3em
+
+.comment
+	background-color: #2B938B
+	position: relative
+	margin-bottom: 60px
+	margin-top: 20px
+	border-radius: 4px
+	.left-c
+		float: left
+	.right-c
+		float: right
+	p
+		font-family: Roboto
+		font-style: italic
+		font-weight: 300
+		color: $white
+		font-size: 1.2em
+		padding: 20px
+		padding-bottom: 70px
+	a
+		width: 30px	!important
+		position: absolute
+		left: 270px
+		top: 7px
+	.avatar
+		display: block
+		background-color: $white
+		border-radius: 250px
+		position: absolute
+		width: 90px
+		height: 90px
+		bottom: -45px
+		left: 20px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		background-image: url(../img/avatar.png)
+		h5
+			color: $white
+			font-size: 1.6em
+			margin-left: 75px
+			margin-top: 10px
+			width: 210px
+			font-family: Oswald
+			font-weight: 300
+			text-transform: uppercase
+			text-align: center
+
+.owp
+	.owl-prev, .owl-next
+		i
+			font-size: 2.5em
+			color: White
+			font-weight: 100
+		top: 45%
+		background-color: #30A39B !important
+		width: 50px
+		height: 50px
+	.owl-prev
+		left: -100px
+	.owl-next
+		right: -100px
+	.owl-dots
+		display: none
+		margin-bottom: 35px !important
+		span
+			width: 20px !important
+			height: 20px !important
+			background-color: transparent !important
+			border: 1px white solid
+
+.owl-mobile-carousel
+	display: none !important
+	@extend .owp
+
+.qa
+	font-family: Roboto
+	background-color: #F3F3F3
+	padding-bottom: 20px
+	.qa-title
+		h1
+			text-align: center
+			font-family: Oswald
+			text-transform: uppercase
+			padding-top: 40px
+			margin-top: 0
+			margin-bottom: 20px
+			color: #000
+			font-weight: 300
+			font-size: 3em
+	.qa-content
+		padding-top: 20px
+		h2
+			font-size: 1.6em
+			text-transform: uppercase
+			margin-bottom: 20px
+		p
+			color: #888888
+			padding-bottom: 30px
+
+.timer
+	position: relative
+	background-color: #A352CD
+	.tablets-bg
+		position: absolut
+		bottom: 0
+		left: 0
+	.timer-content
+		float: right
+		display: block
+		margin: auto
+		background: #211029
+		height: 526px
+		max-width: 500px
+		h2
+			text-transform: uppercase
+			color: $white
+			font-size: 3em
+			font-weight: 300
+			font-family: Oswald
+			padding: 20px 30px
+			padding-top: 40px
+			margin: 0
+			margin-bottom: 0
+		p
+			padding: 15px 30px
+			color: $white
+	form
+		padding: 0 30px
+		float: right
+		input[type="text"]
+			width: 340px
+			border-radius: 4px
+			border: none
+			padding: 10px 15px
+			margin-bottom: 20px
+		input[type="submit"]
+			background-color: $yellow
+			font-family: Oswald
+			font-weight: 300
+			padding: 9px 35px
+			// margin-left: 20px
+			border-radius: 22px
+			color: $white
+			font-size: 1.2em
+			text-transform: uppercase
+			border: none
+			width: 350px
+			margin: 20px 0
+		a
+			text-decoration: underline
+			color: inherit
+		label
+			color: $white
+			font-family: Roboto
+			width: 350px
+			float: left
+			font-weight: 300
+			padding-left: 15px
+.particle-l
+	position: absolute
+	width: 7px
+	height: 20px
+	border-radius: 20px
+	background-color: $white
+	left: -4px
+	top: 35%
+.particle-r
+	position: absolute
+	width: 7px
+	height: 20px
+	border-radius: 20px
+	background-color: $white
+	right: -35px
+	top: 35%
+.timer-data
+	margin-bottom: 40px
+	width: 370px
+	margin-left: 30px
+	position: relative
+	.line
+		width: 100%
+		height: 3px
+		background-color: $white
+		top: 50%
+		position: absolute
+		z-index: 0
+	.bg-timer-items
+		z-index: 1
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 400px
+		justify-content: space-between
+		#hour
+			left: 127px
+		#min
+			left: 230px
+		#sec
+			left: 335px
+		>span
+			color: $yellow
+			position: absolute
+			bottom: -25px
+			left: 22px
+			justify-content: center
+		.t-i
+			width: 80px
+			height: 70px
+			font-size: 3.5em
+			border-radius: 4px
+			text-align: center
+			font-family: Oswald
+			font-weight: 300
+			background-color: $white
+.rbl
+	font-size: 1.6em !important
+	font-family: Roboto
+
+#map-section
+	height: 550px
+	width: 100%
+	position: relative
+	#map
+		position: relative
+		height: 100%
+		width: 100%
+	.info
+		position: absolute
+		width: 20px
+		height: 20px
+		background-color: #FFFFFF
+		top: 50%
+		margin-top: -200px
+		box-shadow: 0px 6px 14.56px 1.44px rgba(0, 0, 0, 0.13)
+		width: 480px
+		height: 400px
+		text-align: center
+		font-family: Roboto
+		font-weight: 300
+		h2
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 2em
+			font-style: normal
+			margin-bottom: 30px
+			margin-top: 3%
+			font-family: Oswald
+		img
+			margin: 40px auto
+			display: block
+
+.footer-menu
+	background-color: #092A27
+	.ft-menu-content
+		opacity: 0.5
+		img
+			padding-top: 17px
+		p
+			color: white
+			text-align: left
+			padding-top: 25px
+			padding-left: 20px
+			padding-bottom: 15px
+		a
+			padding-top: 25px
+			display: block
+			text-decoration: underline
+			color: white
+	.sdv
+		text-align: right
+		padding: 10px 0 0 0 !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import media
