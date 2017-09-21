@@ -1,7 +1,6 @@
 //Popup
 $('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
-
 		fixedContentPos: false,
 		fixedBgPos: true,
 
@@ -16,6 +15,9 @@ $('.popup-with-move-anim').magnificPopup({
 	});
 var magnificPopup = $.magnificPopup.instance;
 $('.dialog-close').click(function() {
+	magnificPopup.close();
+});
+$('.mobile-menu-ref a').click(function() {
 	magnificPopup.close();
 });
 
@@ -159,7 +161,7 @@ $(document).ready(function(){
         remain_bv = remain_bv - 1;
         parseTime_bv(remain_bv);
         if(remain_bv <= 0){
-            alert('Hello');
+//
         }
     }, 1000);
 });
